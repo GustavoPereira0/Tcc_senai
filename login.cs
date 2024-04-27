@@ -24,12 +24,7 @@ namespace Tcc_senai
 				Cliente cliente = new Cliente();
 				if (cliente.RegistroRepetido(txtcpf.Text, txtemail.Text, txtSenha.Text) == true)
 				{
-					cliente.Inserir(txtnome.Text, txtcpf.Text, txtemail.Text, txtSenha.Text);
-					MessageBox.Show("Cadastro feito com sucesso!", "Inserir", MessageBoxButtons.OK, MessageBoxIcon.Information);
-					List<Cliente> clientes = cliente.listacliente();
-					this.Hide();
-					salario salario = new salario();
-					salario.Show();
+					MessageBox.Show("Entrou com sucesso!", "Inserir", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				}
 				else
 				{
