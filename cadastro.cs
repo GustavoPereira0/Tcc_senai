@@ -68,7 +68,7 @@ namespace Tcc_senai
         }
         public bool RegistroRepetido(string cpf, string email, string senha)
         {
-            string mysql = "SELECT * FROM cadastro WHERE cpf= '" + cpf + "' AND email= '" + email + "', AND senha= '" + senha + "'";
+            string mysql = "SELECT * FROM cadastro WHERE cpf= '" + cpf + "' AND email= '" + email + "' AND senha= '" + senha + "'";
             con.Open();
             MySqlCommand cmd = new MySqlCommand(mysql, con);
             cmd.ExecuteNonQuery();
@@ -82,7 +82,7 @@ namespace Tcc_senai
         }
 		public bool RegistroRepetido2(string cpf, string email)
 		{
-			string mysql = "SELECT * FROM cadastro WHERE cpf= '" + cpf + "' AND email= '" + email + "', AND senha= '" + senha + "'";
+			string mysql = "SELECT * FROM cadastro WHERE cpf= '" + cpf + "' AND email= '" + email + "'";
 			con.Open();
 			MySqlCommand cmd = new MySqlCommand(mysql, con);
 			cmd.ExecuteNonQuery();
